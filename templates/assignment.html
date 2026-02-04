@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Assignment | Assignment Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="gradient-bg form-page-body">
+
+    <div class="glass-card form-card">
+        <h2 class="title"> Add New Assignment</h2>
+        <p class="subtitle">Stay ahead of your deadlines</p>
+
+        <form method="POST">
+            <label>Assignment Title</label>
+            <input type="text" name="title" placeholder="e.g. ER Diagram Submission" required>
+    </div>
+
+    <div class="input-group">
+        <label>Due Date</label>
+        <input type="date" name="due_date" required>
+    </div>
+
+    <div class="input-group">
+        <label>Select Subject</label>
+        <select name="subject_id" required>
+            {% for subject in subjects %}
+            <option value="{{ subject.subject_id }}">
+                {{ subject.subject_name }}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button type="submit" class="primary-btn">Add Assignment</button>
+    </form>
+
+    <a href="/dashboard" class="back-link">⬅ Back to Dashboard</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Assignment Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="gradient-bg form-page-body">
+
+    <div class="glass-card form-card">
+        <h2 class="title">Create an Account</h2>
+        <p class="subtitle">Join Assignment Tracker today</p>
+
+        <form method="POST" action="/register">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Create a secure password" required>
+            </div>
+
+            <button type="submit" class="primary-btn">Register</button>
+        </form>
+
+        <div class="switch-form">
+            <p>Already have an account? <a href="/">Log In</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
