@@ -13,7 +13,6 @@
     color: #333;
 }
 
-/* Helper to center content on form pages */
 .form-page-body {
     display: flex;
     align-items: center;
@@ -42,7 +41,7 @@
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #fff;
+    color: #0a002c;
 }
 
 .subtitle {
