@@ -16,7 +16,7 @@ services:
       - DB_NAME=assignment_tracker
       - FLASK_ENV=production
     env_file:
-      - .env
+      - .env.production
     restart: on-failure
     networks:
       - app-network
