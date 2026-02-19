@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, redirect, session, url_for
 import mysql.connector
 from datetime import date
-from config import DB_CONFIG
+from config import DB_CONFIG, SECRET_KEY
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
-app.secret_key = "secret123"   
+app.secret_key = SECRET_KEY   
 
 # ---------------- DATABASE CONNECTION ----------------
 def get_db_connection():

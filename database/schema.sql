@@ -1,5 +1,6 @@
 
 CREATE DATABASE IF NOT EXISTS assignment_tracker;
+
 USE assignment_tracker;
 
 -- Students table
@@ -18,7 +19,6 @@ CREATE TABLE subjects (
     FOREIGN KEY (student_id) REFERENCES students (student_id) ON DELETE CASCADE
 );
 
-
 -- Assignments table
 CREATE TABLE assignments (
     assignment_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -36,4 +36,3 @@ CREATE TABLE progress (
     completed_on DATE,
     FOREIGN KEY (assignment_id) REFERENCES assignments (assignment_id) ON DELETE CASCADE
 );
-   
