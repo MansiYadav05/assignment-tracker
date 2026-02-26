@@ -8,7 +8,7 @@
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #f87fee, #764ba2);
     min-height: 100vh;
     color: #333;
 }
@@ -28,7 +28,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     padding: 30px 40px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .form-card {
@@ -48,7 +48,7 @@
     font-size: 1rem;
     font-weight: 300;
     margin-bottom: 30px;
-    color: #eee;
+    color: #000000;
 }
 
 .input-group {
@@ -60,7 +60,7 @@
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #f0f0f0;
+    color: #000000;
 }
 
 .input-group input,
@@ -70,19 +70,19 @@
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.2);
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
 }
 
 .input-group input::placeholder {
-    color: #ccc;
+    color: #000000;
 }
 
 .input-group input:focus,
 .input-group select:focus {
-    border-color: #fff;
+    border-color: #000000;
 }
 
 /* Style the dropdown arrow */
@@ -102,7 +102,7 @@
     border: none;
     border-radius: 8px;
     background-color: #8e44ad;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -111,7 +111,7 @@
 }
 
 .primary-btn:hover {
-    background-color: #9b59b6;
+    background-color: #cf88eb;
 }
 
 .back-link {
@@ -133,11 +133,11 @@
 }
 
 .switch-form p {
-    color: #eee;
+    color: #000000;
 }
 
 .switch-form a {
-    color: #fff;
+    color: #000000;
     font-weight: 600;
     text-decoration: none;
 }
@@ -146,7 +146,6 @@
     text-decoration: underline;
 }
 
-/* Dashboard Styles */
 .top-bar {
     position: fixed;
     top: 0;
@@ -157,7 +156,7 @@
     align-items: center;
     padding: 20px 50px;
     background: rgba(0, 0, 0, 0.1);
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 1000;
 }
 
@@ -190,9 +189,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    /* Center the container */
     padding: 120px 40px 40px 40px;
-    /* Adjusted padding for fixed top-bar */
     min-height: 100vh;
 }
 
